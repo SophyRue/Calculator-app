@@ -1,7 +1,7 @@
 
 // Calculator class
 class Calculator {
-    constructor() {
+    constructor(calculator) {
       this.currentValue = 0;
     }
   
@@ -33,15 +33,7 @@ class Calculator {
       return this.currentValue;
     }
   }
-  
-  // Usage example
-  const calculator = new Calculator();
-  
-  calculator.add(5);
-  calculator.multiply(3);
-  calculator.subtract(2);
-  calculator.divide(4);
-  
-  console.log("Result: ", calculator.getResult()); // Output: Result:  4
+ let result = document.getElementById('calculate').value
+  const calculator = new Calculator(calculator);
   
   
